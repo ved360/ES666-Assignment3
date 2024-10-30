@@ -33,7 +33,7 @@ for idx,algo in enumerate(all_submissions):
             os.makedirs(os.path.dirname(outfile),exist_ok=True)
             cv2.imwrite(outfile,stitched_image)
             print(homography_matrix_list)
-            print('Panaroma saved ... @ ./results/{}.png'.format(spec.name))
+            print('Panaroma saved ... @ {}'.format(outfile))
             print('\n\n')
 
     except Exception as e:
